@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Code</title>
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/clean_code.css">
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Modulação no JavaScript</h1>
+    </header>
+
+
+    <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
+        Menu
+    </span>
+
+    <menu id="itens">
+        <ul>
+            <li><a href="clean.code.html">Clean code</a></li>
+            <li><a href="clean.code2.html"> Modulação no JavaScript</a></li>
+        </ul>
+    </menu>
+
+    <main>
+        <h3>
+            <img src="assets/cleancode.png" alt="Clean Code" height="450" width="900">
+            <p> Modulação em JavaScript é uma técnica que permite dividir o código em partes menores e mais
+                gerenciáveis, chamadas de módulos. Isso facilita a manutenção, reutilização e organização do código.
+            </p>
+        </h3>
+
+        <article>
+            <h2>Modulação no JavaScript</h2>
+
+            <p>Para usar módulos em JavaScript, você pode usar as palavras-chave export e import. A exportação permite
+                que você disponibilize funcionalidades de um módulo para serem usadas em outros módulos. A importação
+                permite que você traga funcionalidades de outros módulos para o seu código.</p>
+            <p>Existem dois tipos principais de exportação em JavaScript: nomeada e padrão. A exportação nomeada permite
+                exportar múltiplas funcionalidades de um módulo, enquanto a exportação padrão permite exportar uma única
+                funcionalidade como padrão do módulo.</p>
+            <p>Em um projeto JavaScript, você pode ter um módulo que exporta funções de saudação e despedida, e outro
+                módulo que importa essas funções para usá-las. Isso ajuda a manter o código organizado e facilita a
+                colaboração entre desenvolvedores.</p>
+            <img src="assets/transferir.png" alt="Clean Code" height="350" width="350">
+            <p>Formatação Consistente: Seguir um estilo de formatação consistente ajuda na leitura. Utilize
+                indentação e
+                espaçamento de maneira regular.</p>
+            <p>Tratar Erros de Forma Elegante: Ao invés de usar códigos de retorno para indicar erros, use exceções.
+                Isso
+                torna o código mais limpo e os fluxos de erro mais fáceis de seguir.</p>
+            <p>Evitar Repetição: "Don't Repeat Yourself" (DRY) é um princípio fundamental. Reutilize código ao invés
+                de
+                copiá-lo.</p>
+            <p>Testes Automatizados: Escreva testes para garantir que o código funciona conforme esperado e para
+                facilitar
+                futuras modificações.</p>
+
+
+
+            <h2>Benefícios da Modulação</h2>
+            <p>Reutilização de Código: Módulos permitem reutilizar código em diferentes partes do projeto ou em projetos diferentes.
+            </p>
+
+            <p>Manutenção: Facilita a manutenção do código, pois cada módulo é responsável por uma funcionalidade específica.</p>
+
+            <p>Organização: Ajuda a organizar o código em partes lógicas e gerenciáveis.</p>
+
+            <p>Evita Conflitos de Nomes: Cada módulo tem seu próprio escopo, evitando conflitos de nomes entre diferentes partes do código.</p>
+            <img src="assets/modulação1.png" alt="Modulação" height="300" width="500">
+
+            
+            <h2>Ferramentas e padrões</h2>
+
+            <p>ES Modules (ESM): Padrão moderno de módulos introduzido no ECMAScript 2015 (ES6). Utiliza as palavras-chave import e export.
+            </p>
+
+            <p>CommonJS: Sistema de módulos usado principalmente em Node.js. Utiliza require para importar e module.exports para exportar.</p>
+
+            <h2>Exemplos práticos</h2>
+
+            <p>Exemplos Práticos: Um exemplo comum de modulação é a criação de bibliotecas ou pacotes em linguagens como
+                Python. Outro exemplo é a arquitetura MVC (Model-View-Controller) em frameworks web, onde o código é
+                dividido em três partes principais com responsabilidades distintas.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Juliane - 2024</p>
+    </footer>
+
+    <script src="js/clean.code.js"> </script>
+
+</body>
+
+</html>
